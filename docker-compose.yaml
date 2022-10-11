@@ -1,0 +1,34 @@
+version: "3"
+
+services:
+  # admin:
+  #   build:
+  #     context: ./admin
+  #   ports:
+  #     - 3001:80
+
+  # client:
+  #   build:
+  #     context: ./client
+  #   ports:
+  #     - 3000:80
+
+  node:
+    restart: always
+    build:
+      context: ./server
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/code
+
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017
+    volumes:
+      - ./Server/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - mongodb:/data/db
+
+volumes:
+  mongodb:

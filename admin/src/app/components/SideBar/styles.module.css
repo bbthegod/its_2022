@@ -1,0 +1,16 @@
+.drawer {
+  width: 240px;
+  margin-top: 64px;
+  height: calc(100% - 64px);
+  border-right: none !important;
+}
+.root {
+  border-right: none !important;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+}
+.divider {
+  margin: 16px 0px;
+}

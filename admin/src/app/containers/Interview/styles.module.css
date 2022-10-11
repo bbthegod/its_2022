@@ -1,0 +1,24 @@
+.header {
+  padding: 15px 0px;
+  margin-bottom: 0px;
+}
+.searchBox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 20px 10px;
+}
+.inforText {
+  color: #ff7043;
+}
+.autocomplete {
+  width: 300px;
+}
+.autocomplete fieldset {
+  border-color: #ff9800;
+}
+
+.paper {
+  padding: 10px;
+  text-align: center;
+}

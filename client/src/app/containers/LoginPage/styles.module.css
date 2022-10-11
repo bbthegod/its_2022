@@ -1,0 +1,39 @@
+.root {
+  padding: 24px;
+}
+.paper {
+  padding: 16px 20px;
+}
+.inputWrapper {
+  margin-bottom: 20px;
+}
+.input {
+  width: 100%;
+}
+.input fieldset {
+  border-color: #6863ce;
+}
+.text {
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px !important;
+  margin: 10px !important;
+  margin-bottom: 20px !important;
+}
+.hideIcon {
+  color: #6863ce !important;
+}
+.buttonBox {
+  margin: 10px auto;
+  margin-top: 20px;
+  text-align: center;
+}
+.button {
+  width: 100%;
+  height: 50px;
+  color: #ffffff !important;
+}
+.progress {
+  height: 30px;
+  width: 30px;
+}
