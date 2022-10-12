@@ -19,11 +19,10 @@ app.use(compress());
 app.use(methodOverride());
 app.use(bearerToken());
 app.use(helmet());
-app.options('*', cors())
+app.use(cors({ origin: '*' }))
 app.use(morgan(':method :url :status :response-time ms'));
 app.use('/api', routes);
 app.use(converter);
 app.use(notFound);
 app.use(handler);
-
 export default app;
