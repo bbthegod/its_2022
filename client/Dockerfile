@@ -2,6 +2,7 @@ FROM node:14.19.0-alpine as builder
 
 WORKDIR /var/lib/app/
 COPY ./package.json ./
+COPY ./yarn.lock ./
 COPY ./src/ ./src
 COPY ./public/ ./public
 COPY . .

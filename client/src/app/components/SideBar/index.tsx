@@ -22,7 +22,7 @@ interface Props {
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
-    children?: React.ReactElement;
+    children: React.ReactElement;
   },
   ref: React.Ref<unknown>,
 ) {
