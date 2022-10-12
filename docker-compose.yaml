@@ -11,7 +11,7 @@ services:
     build:
       context: ./client
     ports:
-      - 3000:80
+      - 80:80
 
   node:
     restart: always
@@ -27,9 +27,8 @@ services:
     ports:
       - 27017:27017
     volumes:
-      - ./Server/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
       - mongodb:/data/db
 
 volumes:
   mongodb:
-  

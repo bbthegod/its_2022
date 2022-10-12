@@ -7,7 +7,6 @@ stats.json
 .pnp
 .pnp.js
 package-lock.json
-yarn.lock
 
 # misc
 .DS_Store
