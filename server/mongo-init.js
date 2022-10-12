@@ -23,33 +23,47 @@ db.createCollection('questions');
 
 db.questions.insertMany([
   {
-    "_id": ObjectId("63457e303c8646b1142f7698"),
     "content": "1+1=?",
     "options": [
       {
         "numbering": NumberInt(1),
-        "answer": "1",
-        "_id": ObjectId("63457e303c8646b1142f7699")
+        "answer": "1"
       },
       {
         "numbering": NumberInt(2),
-        "answer": "2",
-        "_id": ObjectId("63457e303c8646b1142f769a")
+        "answer": "2"
       },
       {
         "numbering": NumberInt(3),
-        "answer": "3",
-        "_id": ObjectId("63457e303c8646b1142f769b")
+        "answer": "3"
       },
       {
         "numbering": NumberInt(4),
-        "answer": "4",
-        "_id": ObjectId("63457e303c8646b1142f769c")
+        "answer": "4"
       }
     ],
-    "correctAnswer": NumberInt(2),
-    "createdAt": ISODate("2022-10-11T14:31:12.625+0000"),
-    "updatedAt": ISODate("2022-10-11T14:31:12.625+0000"),
-    "__v": NumberInt(0)
+    "correctAnswer": NumberInt(2)
+  },
+  {
+    "content": "2+2=?",
+    "options": [
+      {
+        "numbering": NumberInt(1),
+        "answer": "1"
+      },
+      {
+        "numbering": NumberInt(2),
+        "answer": "2"
+      },
+      {
+        "numbering": NumberInt(3),
+        "answer": "3"
+      },
+      {
+        "numbering": NumberInt(4),
+        "answer": "4"
+      }
+    ],
+    "correctAnswer": NumberInt(4)
   }
 ])
