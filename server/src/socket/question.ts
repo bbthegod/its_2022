@@ -14,7 +14,7 @@ async function scoreCaculation(play) {
     let score = 0;
     for (let i = 0; i < play.questions.length; i++) {
       if (play.questions[i].answer === result.questions[i].questionId.correctAnswer) {
-        score += 10;
+        score += 5;
       }
     }
     result.totalScore = score;
