@@ -3,7 +3,7 @@ WORKDIR /app
 COPY ["package.json", "package-lock.json*", "./"]
 COPY .env.example .env
 RUN yarn
-RUN yarn typescript -g
+RUN npm i typescript -g
 COPY . .
 RUN yarn build
 CMD ["yarn", "start"]
