@@ -19,7 +19,7 @@ app.use(compress());
 app.use(methodOverride());
 app.use(bearerToken());
 app.use(helmet());
-app.use(cors());
+app.options('*', cors())
 app.use(morgan(':method :url :status :response-time ms'));
 app.use('/api', routes);
 app.use(converter);
